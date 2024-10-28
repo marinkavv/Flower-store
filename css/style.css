@@ -1,0 +1,49 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+
+@font-face {
+  font-family: "Source Sans Pro Regular";
+  src: url("/fonts/source-sans-pro.regular.ttf") format("truetype");
+}
+
+/* MENU */
+header {
+  background-color: #a9bfe4;
+  padding: 8px 64px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.logo img {
+  width: 270px;
+  height: 110px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-links,
+.menu-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.menu-links li a {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.search-icon img,
+.cart-icon img {
+  max-height: 40px;
+}
