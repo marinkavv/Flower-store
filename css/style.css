@@ -1,5 +1,5 @@
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap");
 
 @font-face {
   font-family: "Source Sans Pro Regular";
@@ -46,4 +46,63 @@ ul li {
 .search-icon img,
 .cart-icon img {
   max-height: 40px;
+}
+
+/* SECTION 1 */
+.bouquet-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  margin-left: 64px;
+}
+
+.content h1 {
+  font-size: 56px;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #351f21;
+  line-height: 64px;
+}
+
+.content p {
+  font-size: 34px;
+  font-family: "Source Sans Pro Regular";
+  width: 664px;
+  color: #351f21;
+  margin-bottom: 36px;
+  line-height: 54px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 64px;
+}
+
+button {
+  padding: 10px 80px;
+  border-radius: 50px;
+  font-size: 36px;
+  font-family: "Source Sans Pro Regular";
+  cursor: pointer;
+}
+
+.cart-btn {
+  background-color: #ffc2c7;
+  color: white;
+  border: none;
+}
+
+.catalog-btn {
+  background-color: transparent;
+  color: #989ec3;
+  border: 2px solid #ffc2c7;
+}
+
+.flower-image {
+  margin: 10px 0;
+  height: 754px;
 }
