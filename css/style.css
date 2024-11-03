@@ -9,7 +9,7 @@
 /* MENU */
 header {
   background-color: #a9bfe4;
-  padding: 8px 64px;
+  padding: 8px 84px;
 }
 
 nav ul {
@@ -56,7 +56,7 @@ ul li {
 }
 
 .content {
-  margin-left: 64px;
+  margin-left: 84px;
 }
 
 .content h1 {
@@ -105,4 +105,156 @@ button {
 .flower-image {
   margin: 10px 0;
   height: 754px;
+}
+
+/* SECTION 2 */
+
+.categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.category-item {
+  position: relative;
+  text-align: center;
+}
+
+.category-item img {
+  width: 460px;
+  height: 345px;
+  object-fit: cover;
+}
+
+.category-title {
+  position: absolute;
+  bottom: 30px;
+  left: 47%;
+  transform: translateX(-40%);
+  background-color: #a9bfe4;
+  padding: 16px 40px;
+  font-size: 28px;
+  font-family: "Lora", serif;
+  color: #ffffff;
+}
+
+/* SECTION 3 */
+.section-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+.text-block {
+  max-width: 40%;
+  position: relative;
+  margin-left: 64px;
+}
+
+.text-block h2 {
+  font-size: 44px;
+  color: #351f21;
+  margin-bottom: 18px;
+  font-family: "Lora", serif;
+}
+
+.text-block p {
+  font-size: 28px;
+  color: #351f21;
+  line-height: 1.6;
+  font-family: "Source Sans Pro Regular", sans-serif;
+  margin-bottom: 20px;
+  padding-left: 25px; /* Відступ для вертикальної лінії */
+  position: relative;
+}
+
+/* Вертикальна лінія поруч з першим абзацом */
+.section-about p:first-of-type::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 40px;
+  background-color: #ffc2c7;
+}
+
+.abstract-background {
+  position: absolute;
+  right: 0;
+  bottom: -50%;
+  overflow: hidden;
+  z-index: -1;
+  width: 744px;
+  top: 8%;
+}
+
+.women {
+  position: absolute;
+  right: 6%;
+  bottom: 0%;
+  z-index: 2;
+  width: 740px;
+}
+
+/* Соціальні іконки */
+.social-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 0;
+  position: relative;
+  z-index: 3;
+  right: 4%;
+}
+
+.social-icons li img {
+  width: 40px;
+  height: 42px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons li img:hover {
+  transform: scale(1.1);
+}
+
+/*  */
+.section-services-bg {
+  padding: 16px 0 16px 64px;
+  background-color: #a9bfe44d;
+}
+
+.section-services-bg h2 {
+  margin-left: 64px;
+  font-size: 32px;
+  font-family: "Lora", serif;
+  color: #989ec3;
+}
+
+.section-services {
+  display: flex;
+  justify-content: space-around;
+  margin: 36px 0;
+}
+
+.section-services article {
+  text-align: center;
+  width: 16%;
+}
+
+.section-services img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.section-services p {
+  font-size: 22px;
+  color: #351f21;
+  font-family: "Source Sans Pro Regular", sans-serif;
 }
