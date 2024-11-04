@@ -326,3 +326,334 @@ button {
   font-size: 24px;
   font-weight: bold;
 }
+
+/* SECTION 5 */
+
+/* Styling for the images of the flowers */
+img[src*="flowers 1.png"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+img[src*="flowers 2.png"] {
+  position: absolute;
+  top: 180px; /* Adjust as necessary */
+  left: 0;
+}
+
+/* Reviews section styling */
+.reviews-section {
+  position: relative;
+  padding: 64px 64px;
+  background-color: rgba(169, 191, 228, 0.2);
+}
+
+/* Reviews title */
+.reviews-section h2 {
+  font-size: 44px;
+  color: #351f21;
+  margin-bottom: 44px;
+}
+
+.review {
+  display: flex;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.review2 {
+  margin-left: 244px;
+}
+
+.flower1 {
+  margin-top: -6%;
+  width: 20%;
+}
+
+.flower2 {
+  margin-top: 150px;
+  width: 16%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.review img {
+  width: 200px;
+  height: 200px;
+  margin-right: 48px;
+}
+
+.review blockquote {
+  font-size: 28px;
+  width: 656px;
+  margin: 0;
+  padding: 0;
+}
+
+.review p {
+  margin-top: 8px;
+  font-size: 24px;
+  color: #989ec3;
+  font-weight: bold;
+}
+
+.line {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #ffc2c7;
+  margin: 8px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.arrow {
+  font-size: 44px;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+
+.circlePag {
+  width: 15px;
+  height: 15px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.circlePag.active {
+  background-color: #ffc2c7;
+}
+
+.arrow.next {
+  color: #ffc2c7;
+}
+
+/* Додати відгук */
+.add-review {
+  margin-top: 40px;
+}
+
+.add-review h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.add-review input {
+  display: block;
+  /* margin-bottom: 12px; */
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.feedback-user-name {
+  height: 29px;
+}
+
+.feedback {
+  height: 94px;
+  display: block;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.add-review button {
+  background-color: #ffc2c7;
+  color: #ffffff;
+  /* width: 130px; */
+  /* height: 30px; */
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  padding: 10px 50px;
+}
+
+/* Доставка і оплата */
+.circles-container h2 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.circles-container {
+  padding: 24px 64px;
+  margin-bottom: 120px;
+}
+
+.numbers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+  row-gap: 40px;
+  margin-top: 28px;
+}
+
+.circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.circle-item:last-child {
+  margin-right: 0;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(255, 194, 199, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #a9bfe4;
+}
+
+.text {
+  width: 400px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #a9bfe4;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.flower-photo {
+  position: absolute; /* Робить картинку абсолютно позиціонованою */
+  top: 0; /* Розміщує картинку зверху */
+  right: 0; /* Розміщує картинку з правого боку */
+  transform: translate(200%, -80%) rotate(-59.59deg); /* Об'єднує переміщення та поворот */
+  transform-origin: bottom right; /* Центр повороту у нижньому правому кутку */
+  width: 264px; /* Задає ширину картинки */
+  height: auto; /* Зберігає пропорції картинки */
+}
+
+.logoFooter {
+  display: block;
+  margin: 36px auto;
+  width: 272px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.footer-column li,
+.footer-column a {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.subscribe input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe button {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 36px;
+}
+
+.footer-social-icons img {
+  width: 40px;
+  height: auto;
+}
+
+.footer-social-icons .iconViber {
+  width: 48px;
+}
+
+.footer-copyright {
+  margin: 80px 0 30px 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.email-subscription {
+  display: flex;
+  align-items: center;
+  border-radius: 50px; /* Загальні округлі краї */
+  overflow: hidden;
+  background-color: #ffffff; /* Білий фон для контейнера */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкий тіньовий ефект */
+  height: 56px;
+  width: 464px;
+}
+
+.email-subscription input {
+  border: none;
+  flex: 1;
+  padding: 28px 0 18px 30px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 30px 0 0 30px; /* Округлі краї ліворуч */
+  line-height: normal; /* Вирівнювання тексту всередині поля */
+  height: 50px; /* Встановлення висоти поля */
+  box-sizing: border-box; /* Забезпечує правильний розрахунок padding */
+}
+
+.email-subscription button {
+  background-color: #ffc2c7; /* Колір кнопки */
+  border: none;
+  padding: 6px 32px;
+  color: white;
+  font-size: 20px;
+  height: 56px;
+  cursor: pointer;
+  border-radius: 50px; /* Округлі краї праворуч */
+  outline: none;
+}
