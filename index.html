@@ -6,6 +6,15 @@
     <title>Flower Store</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script defer src="/js/index.js"></script>
   </head>
   <body>
     <!-- MENU -->
@@ -14,10 +23,10 @@
         <ul>
           <li class="logo"><img src="/Images/logo.png" alt="Логотип" /></li>
           <div class="menu-links">
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Про нас</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#aboutUs">Про нас</a></li>
             <li><a href="#">Збери букет</a></li>
-            <li><a href="#">Контакти</a></li>
+            <li><a href="#footer">Контакти</a></li>
           </div>
           <div class="menu-icons">
             <li class="search-icon">
@@ -30,6 +39,17 @@
         </ul>
       </nav>
     </header>
+
+    <div class="basketCart">
+      <h2 class="cartTitle">Корзина</h2>
+      <div class="cartContent"></div>
+      <div class="total">
+        <div class="totalTitle">Сума</div>
+        <div class="totalPrice">₴ 0</div>
+      </div>
+      <button type="button" class="btnBuy">Оплатити</button>
+      <i class="bx bx-x" id="cartClose"></i>
+    </div>
 
     <!-- MAIN CONTENT -->
 
@@ -44,7 +64,9 @@
           </p>
           <div class="buttons-container">
             <button class="cart-btn">В кошик</button>
-            <button class="catalog-btn">В каталог</button>
+            <button class="catalog-btn">
+              <a href="#catalog">В каталог</a>
+            </button>
           </div>
         </div>
         <div class="image-container">
@@ -75,7 +97,7 @@
       </section>
 
       <!-- SECTION 3 -->
-      <section class="section-about">
+      <section class="section-about" id="aboutUs">
         <div class="text-block">
           <h2>Про нас</h2>
           <p>
@@ -133,7 +155,7 @@
 
       <!-- SECTION 4 -->
       <div class="products">
-        <h2>Каталог</h2>
+        <h2 id="catalog">Каталог</h2>
         <div class="productsCards">
           <div class="product-card">
             <img
@@ -330,7 +352,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <img src="/Images/flowers 3.png" alt="" class="flower-photo" />
 
       <img src="/Images/logo.png" alt="Логотип" class="logoFooter" />
