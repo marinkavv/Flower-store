@@ -28,6 +28,7 @@ function ready() {
 
 function addCartClicked(event) {
   const productCard = event.target.closest(".product-card");
+
   const title =
     productCard.querySelector(".product-name span:nth-child(1)").innerText +
     " " +
@@ -138,14 +139,4 @@ function loadCartItems() {
 function updateCartState() {
   updatetotal();
   saveCartItems();
-  updateCartIcon();
-}
-
-function updateCartIcon() {
-  const cartBoxes = document.querySelectorAll(".cart-box");
-  const totalQuantity = Array.from(cartBoxes).reduce((sum, cartBox) => {
-    return sum + parseInt(cartBox.querySelector(".cart-quantity").value);
-  }, 0);
-
-  cartIcon.setAttribute("data-quantity", totalQuantity);
 }
