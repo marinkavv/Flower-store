@@ -1,6 +1,7 @@
 let cartIcon = document.querySelector(".cart-icon a");
 let cart = document.querySelector(".basketCart");
 let closeCart = document.querySelector("#cartClose");
+const productContainer = document.getElementById("product-container");
 
 document.addEventListener("DOMContentLoaded", ready);
 
@@ -140,3 +141,29 @@ function updateCartState() {
   updatetotal();
   saveCartItems();
 }
+
+function loadProducts(products) {
+  productContainer.innerHTML = "";
+  products.forEach((product) => {
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card");
+
+    productCard.innerHTML = `
+      <img
+        src="${product.image}"
+        alt="${product.alt}"
+        class="product-image"
+      />
+      <div class="product-name">
+        <span>${product.name}:</span>
+        <span>${product.description}</span>
+      </div>
+      <p class="price">${product.price} грн</p>
+      <button class="buy-button">В кошик</button>
+    `;
+
+    productContainer.appendChild(productCard);
+  });
+}
+
+loadProducts(products);
